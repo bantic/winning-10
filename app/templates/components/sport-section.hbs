@@ -1,5 +1,7 @@
-<div class="name">{{sport.name}}</div>
+<h3 class="name">{{sport.name}}</h3>
 
-{{#each sport.teams as |team|}}
-  {{team-section team=team}}
-{{/each}}
+<div class="team-sections">
+  {{#each sport.teams as |team|}}
+    {{team-section team=team}}
+  {{/each}}
+</div>

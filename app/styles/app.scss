@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.winning-header {
+  text-align: center;
+  font-family: 'Racing Sans One', cursive;
+}
+
+.sport-section {
+  .name {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  .team-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.team-section {
+  text-align: center;
+  width: 300px;
+  .name {
+    font-family: 'Raleway', sans-serif;
+  }
+  .empty {
+    font-style: italic;
+  }
+}
+
+.team-checkbox {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid darkgray;
+  background-color: gray;
+
+  &.is-success {
+    background-color: green;
+  }
+}

@@ -12,6 +12,9 @@ export default Ember.Object.extend({
       return this._date;
     }
   }),
+  didHappen: computed('date', function() {
+    return this.get('date') < new Date();
+  }),
   teamId: '',
   awayName: '',
   homeScore: 0,

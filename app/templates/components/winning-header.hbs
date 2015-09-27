@@ -1,3 +1,7 @@
 <header>
-  {{stats.successCount}} / 10
+  <h1 id="title">Winning 10</h1>
+
+  {{#each stats.teams as |team|}}
+    {{team-checkbox team=team}}
+  {{/each}}
 </header>
