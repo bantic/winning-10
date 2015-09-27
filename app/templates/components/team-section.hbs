@@ -1,0 +1,7 @@
+<div class="name">{{team.name}}</div>
+
+Success?? {{if team.isSuccess "Yes" "No"}}.
+
+{{#each team.attempts as |attempt|}}
+  {{attempt-section attempt=attempt}}
+{{/each}}

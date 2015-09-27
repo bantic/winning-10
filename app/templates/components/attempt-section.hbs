@@ -1,0 +1,9 @@
+<div class="date">{{attempt.date}}</div>
+<div class="versus">{{attempt.awayName}}</div>
+
+{{#unless attempt.isUpcoming }}
+  <div class="score">
+    {{attempt.homeScore}} - {{attempt.awayScore}}
+  </div>
+  <div class="success">{{attempt.success}}</div>
+{{/unless}}
