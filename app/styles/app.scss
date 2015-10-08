@@ -13,9 +13,11 @@ body {
 }
 
 .sport-section {
+  text-align: center;
   .name {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    display: inline-block;
   }
   .team-sections {
     display: flex;

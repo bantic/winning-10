@@ -1,5 +1,7 @@
 <h3 class="name">{{sport.name}}</h3>
 
+{{spinning-image url=sport.imageUrl}}
+
 <div class="team-sections">
   {{#each sport.teams as |team|}}
     {{team-section team=team}}
