@@ -1,15 +1,20 @@
 import Ember from 'ember';
 
 const sportData = Ember.A([{
-  id: 'Soccer'
+  id: 'Soccer',
+  imageUrl: '/images/soccer.png'
 }, {
-  id: 'Basketball'
+  id: 'Basketball',
+  imageUrl: '/images/basketball.png'
 }, {
-  id: 'Football'
+  id: 'Football',
+  imageUrl: '/images/football.png'
 }, {
-  id: 'Hockey'
+  id: 'Hockey',
+  imageUrl: '/images/hockey.png'
 }, {
-  id: 'Baseball'
+  id: 'Baseball',
+  imageUrl: '/images/baseball.png'
 }]);
 
 const teamData = Ember.A([{

@@ -7,7 +7,6 @@ export default Ember.Component.extend({
   url: '',
 
   degrees: computed('distance', 'scrollTop', function() {
-    console.log('updating degrees!');
     const distance = this.get('distance'),
           scrollTop = this.get('scrollTop');
     return 360 * ((scrollTop % distance) / distance);
@@ -20,7 +19,6 @@ export default Ember.Component.extend({
   },
 
   updateScroll() {
-    console.log('updateScroll!');
     this.set('scrollTop', $(window).scrollTop());
   }
 });

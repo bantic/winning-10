@@ -8,11 +8,6 @@ export default Ember.Object.extend({
   id:'',
   name: reads('id'),
 
-  imageUrl: computed('id', function() {
-    const id = this.get('id');
-    return `/images/${id.toLowerCase()}.png`;
-  }),
-
   teams: computed('stats.teams.[]', function() {
     return this.get('stats.teams').filterBy('sportId', this.get('id'));
   })
