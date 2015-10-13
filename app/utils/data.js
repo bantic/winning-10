@@ -50,21 +50,27 @@ const teamData = Ember.A([{
 }]);
 
 const attemptData = Ember.A([{
-  teamId: 'Mets',
-  date: '2015-10-02',
-  awayName: 'Nationals',
-  homeScore: 0,
-  awayScore: 0
-}, {
   teamId: 'Giants',
   date: '2015-10-11',
   awayName: '49ers',
-  homeScore: 0,
-  awayScore: 0
+  homeScore: 30,
+  awayScore: 27
 }, {
   teamId: 'Jets',
   date: '2015-10-18',
   awayName: 'Redskins',
+  homeScore: 0,
+  awayScore: 0
+}, {
+  teamId: 'Islanders',
+  date: '2015-10-17',
+  awayName: 'Sharks',
+  homeScore: 0,
+  awayScore: 0
+}, {
+  teamId: 'Nets',
+  date: '2015-11-17',
+  awayName: 'Hawks',
   homeScore: 0,
   awayScore: 0
 }]);

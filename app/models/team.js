@@ -13,5 +13,5 @@ export default Ember.Object.extend({
   }),
 
   successfulAttempts: filterBy('attempts', 'isSuccess'),
-  isSuccess: gt('successfulAttempts', 0)
+  isSuccess: gt('successfulAttempts.length', 0)
 });

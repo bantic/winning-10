@@ -1,6 +1,5 @@
 import Ember from 'ember';
 const { computed } = Ember;
-const { gt } = computed;
 
 export default Ember.Object.extend({
   date: computed({
@@ -19,5 +18,7 @@ export default Ember.Object.extend({
   awayName: '',
   homeScore: 0,
   awayScore: 0,
-  isSuccess: gt('homeScore', 'awayScore'),
+  isSuccess: computed('homeScore', 'awayScore', function(){
+    return this.get('homeScore') > this.get('awayScore');
+  })
 });
