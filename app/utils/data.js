@@ -59,14 +59,14 @@ const attemptData = Ember.A([{
   teamId: 'Jets',
   date: '2015-10-18',
   awayName: 'Redskins',
-  homeScore: 0,
-  awayScore: 0
+  homeScore: 34,
+  awayScore: 20 
 }, {
   teamId: 'Islanders',
   date: '2015-10-17',
   awayName: 'Sharks',
-  homeScore: 0,
-  awayScore: 0
+  homeScore: 6,
+  awayScore: 3
 }, {
   teamId: 'Nets',
   date: '2015-11-17',
