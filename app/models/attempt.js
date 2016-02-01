@@ -1,5 +1,6 @@
 import Ember from 'ember';
 const { computed, computed: { not } } = Ember;
+import moment from 'moment';
 
 export default Ember.Object.extend({
   date: computed({
@@ -7,7 +8,7 @@ export default Ember.Object.extend({
       return this._date;
     },
     set(key, value) {
-      this._date = new Date(value);
+      this._date = moment(value);
       return this._date;
     }
   }),
