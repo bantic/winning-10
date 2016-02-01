@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { computed } = Ember;
+const { computed, computed: { not } } = Ember;
 
 export default Ember.Object.extend({
   date: computed({
@@ -20,5 +20,9 @@ export default Ember.Object.extend({
   awayScore: 0,
   isSuccess: computed('homeScore', 'awayScore', function(){
     return this.get('homeScore') > this.get('awayScore');
-  })
+  }),
+  isFailure: computed('didHappen', 'isSuccess', function() {
+    return (this.get('didHappen') && !this.get('isSuccess'));
+  }),
+  isPending: not('didHappen')
 });

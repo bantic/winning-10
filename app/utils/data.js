@@ -73,6 +73,14 @@ const attemptData = Ember.A([{
   awayName: 'Hawks',
   homeScore: 90,
   awayScore: 88
+}, {
+  teamId: 'Rangers',
+  date: '2016-02-14',
+  awayName: 'Flyers'
+}, {
+  teamId: 'Knicks',
+  date: '2016-02-26',
+  awayName: 'Magic'
 }]);
 
 export { teamData, sportData, attemptData };

@@ -31,6 +31,11 @@ body {
   width: 300px;
   .name {
     font-family: 'Raleway', sans-serif;
+    color: gray;
+  }
+  &.is-success .name {
+    font-weight: bolder;
+    color: darkgreen;
   }
   .empty {
     font-style: italic;
@@ -46,5 +51,14 @@ body {
 
   &.is-success {
     background-color: green;
+  }
+}
+
+.attempt {
+  &.is-success {
+    border-right: 4px solid lightgreen;
+  }
+  &.is-failure {
+    border-right: 2px solid lightcoral;
   }
 }

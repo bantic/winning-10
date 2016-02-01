@@ -1,4 +1,4 @@
-<h4 class="name">{{team.name}}</h4>
+<h4 class="name">{{team.name}} {{#if team.isSuccess}}✔{{/if}}</h4>
 
 <h5>Attempts</h5>
 {{#each team.attempts as |attempt|}}
