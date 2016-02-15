@@ -11,6 +11,20 @@ body {
 .winning-header {
   text-align: center;
   font-family: 'Racing Sans One', cursive;
+  background: url(/images/old_moon.png);
+
+  padding: 2em 0 2em 0;
+  border-bottom: 3px solid gray;
+  margin-bottom: 2em;
+  z-index: 2;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  #title {
+    margin: 0;
+  }
 
   .winning-stats {
     .goal {
@@ -24,6 +38,11 @@ body {
       display: inline-block;
     }
   }
+}
+
+section#main {
+  z-index: 1;
+  margin-top: 280px; /* to account for fixed header */
 }
 
 .sport-section {
