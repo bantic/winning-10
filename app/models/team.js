@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { computed } = Ember;
+const { computed, computed: { not } } = Ember;
 const { reads, filterBy, gt } = computed;
 
 export default Ember.Object.extend({
@@ -13,5 +13,6 @@ export default Ember.Object.extend({
   }),
 
   successfulAttempts: filterBy('attempts', 'isSuccess'),
-  isSuccess: gt('successfulAttempts.length', 0)
+  isSuccess: gt('successfulAttempts.length', 0),
+  isNotSuccess: not('isSuccess')
 });

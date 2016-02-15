@@ -1,0 +1,21 @@
+<div class="goal">
+  Our goal: See all 10 major NYC sports teams win a game, on their home court, in one year.
+</div>
+<table class="progress">
+  <tr>
+    <td class='text'>Successful Attempts:</td>
+    <td class='stat'>{{stats.successfulAttempts.length}}</td>
+  </tr>
+  <tr>
+    <td class='text'>Failed Attempts:</td>
+    <td class='stat'>{{stats.failedAttempts.length}}</td>
+  </tr>
+  <tr>
+    <td class='text'>Days remaining:</td>
+    <td class='stat'>{{days-until stats.endDate}}</td>
+  </tr>
+  <tr>
+    <td class='text'>Teams remaining:</td>
+    <td class='stat'>{{stats.unsuccessfulTeams.length}}</td>
+  </tr>
+</table>

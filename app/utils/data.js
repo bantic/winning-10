@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 const sportData = Ember.A([{
   id: 'Soccer',
@@ -89,4 +90,7 @@ const attemptData = Ember.A([{
   awayName: 'Real Salt Lake'
 }]);
 
-export { teamData, sportData, attemptData };
+const startDate = "2015-10-11";
+const endDate = moment(startDate).add(1, 'year');
+
+export { teamData, sportData, attemptData, endDate };

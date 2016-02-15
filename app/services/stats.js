@@ -2,7 +2,7 @@ import Ember from 'ember';
 const { computed, on } = Ember;
 const { filterBy, reads } = computed;
 
-import { sportData, teamData, attemptData } from '../utils/data';
+import { sportData, teamData, attemptData, endDate } from '../utils/data';
 
 export default Ember.Service.extend({
   loadData: on('init', function() {
@@ -16,5 +16,9 @@ export default Ember.Service.extend({
   }),
 
   successfulTeams: filterBy('teams', 'isSuccess'),
-  successCount: reads('successfulTeams.length')
+  unsuccessfulTeams: filterBy('teams', 'isNotSuccess'),
+  successCount: reads('successfulTeams.length'),
+  successfulAttempts: filterBy('attempts', 'isSuccess'),
+  failedAttempts: filterBy('attempts', 'isFailure'),
+  endDate
 });

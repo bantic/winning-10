@@ -5,11 +5,25 @@
 body {
   margin: 0;
   padding: 0;
+  background: url(/images/old_moon.png);
 }
 
 .winning-header {
   text-align: center;
   font-family: 'Racing Sans One', cursive;
+
+  .winning-stats {
+    .goal {
+      width: 50%;
+      margin: 0 auto 1em;
+    }
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+    .progress {
+      display: inline-block;
+    }
+  }
 }
 
 .sport-section {
@@ -29,6 +43,7 @@ body {
 .team-section {
   text-align: center;
   width: 300px;
+  padding: 0.25em;
   .name {
     font-family: 'Raleway', sans-serif;
     color: gray;
@@ -55,10 +70,11 @@ body {
 }
 
 .attempt {
+  padding: 0.25em;
   &.is-success {
-    border-right: 4px solid lightgreen;
+    background-color: lightgreen;
   }
   &.is-failure {
-    border-right: 2px solid lightcoral;
+    background-color: lightcoral;
   }
 }
