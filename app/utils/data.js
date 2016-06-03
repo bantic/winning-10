@@ -89,7 +89,9 @@ const attemptData = Ember.A([{
 }, {
   teamId: 'New York FC',
   date: '2016-06-02',
-  awayName: 'Real Salt Lake'
+  awayName: 'Real Salt Lake',
+  homeScore: 2,
+  awayScore: 3
 }, {
   teamId: 'Mets',
   date: '2016-05-30',
@@ -105,6 +107,10 @@ const attemptData = Ember.A([{
   teamId: 'Red Bulls',
   date: '2016-06-19',
   awayName: 'Seattle Sounders'
+}, {
+  teamId: 'New York FC',
+  date: '2016-06-18',
+  awayName: 'Philadelphia Union'
 }]);
 
 const startDate = "2015-10-11";
