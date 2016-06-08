@@ -99,14 +99,19 @@ const attemptData = Ember.A([{
   homeScore: 1,
   awayScore: 0
 }, {
-}, {
   teamId: 'Yankees',
   date: '2016-06-07',
-  awayName: 'Anaheim Angels'
+  awayName: 'Anaheim Angels',
+  homeScore: 6,
+  awayScore: 3
 }, {
   teamId: 'Red Bulls',
   date: '2016-06-19',
   awayName: 'Seattle Sounders'
+}, {
+  teamId: 'New York FC',
+  date: '2016-06-15',
+  awayName: 'NY Cosmos'
 }, {
   teamId: 'New York FC',
   date: '2016-06-18',
