@@ -3,7 +3,11 @@ import moment from 'moment';
 
 export function daysUntil([endDate]) {
   let now = moment();
-  return endDate.diff(now, 'days');
+  let result = endDate.diff(now, 'days');
+  if (result <= 0) {
+    result = 0;
+  }
+  return result;
 }
 
 export default Ember.Helper.helper(daysUntil);
